@@ -64,7 +64,7 @@
                 <artifactId>heroku-maven-plugin</artifactId>
                 <version>3.0.4</version>
 				 <configuration>
-                    <appName>glacial-oasis-46422</appName>
+                    <appName>stormy-everglades-72306</appName>
                     <includeTarget>false</includeTarget>
                     <includes>
                         <include>${project.build.directory}/${project.build.finalName}.jar</include>
