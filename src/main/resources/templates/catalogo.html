@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>ReusaCol</title>
+</head>
+<body>
+    <!--Incio de la barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #990066;">
+        <div class="container-fluid">
+          <a class="navbar-brand" th:href="@{/principal}">                  
+            
+            Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                th:href="@{/vendedor}"
+                class="nav-link active"
+                aria-current="page"                
+                >Gestión de usuario</a
+              >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Final de la barra de navegación-->
+      <main class="mis-productos">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <section class="page-header">
+                <div class="container">
+                    <br>
+                  <h1>Catálogo</h1>
+                </div>
+              </section>
+              <section>
+                <div class="search-bar">
+                  <input type="text" placeholder="Buscar" />
+                  <img src="assets/img/search-icon.png" alt="" />
+                  <a th:href="@{/vendedor/new}" class="btn btn-primary"
+                    >Crear artículo</a
+                  >
+                  <br>
+                  <br>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://cdn.mos.cms.futurecdn.net/8teMg732p2r7EpuAbreCqi-1920-80.jpg.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Iphone</h5>
+                  <p class="card-text">Teléfono iphone 11 pro, 6 meses de uso </p>
+                  <h5>$ 1.000.000</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Contactar al vendedor</small>
+                  <button type="button" class="btn btn-warning">Contactar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://img.freepik.com/foto-gratis/vista-frontal-cafetera-tienda_23-2148522994.jpg?w=2000" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cafetera</h5>
+                  <p class="card-text">cafetera marca KingCofee, 2 semanas de uso </p>
+                  <h5>$ 800.000</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Contactar al vendedor</small>
+                  <button type="button" class="btn btn-warning">Contactar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                  <img src="https://ae01.alicdn.com/kf/H4eaf265a49b644ac92b6fde61d7681abN.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Figura de acción Vegeta</h5>
+                    <p class="card-text">Figura de Dragon Ball, 17 meses de usuario </p>
+                    <h5>$ 170.000</h5>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Contactar al vendedor</small>
+                    <button type="button" class="btn btn-warning">Contactar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdnx.jumpseller.com/cacharreria2020-s-a-s/image/23505454/resize/540/600?1650387003" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Teclado + mouse gamer</h5>
+                    <p class="card-text">Teclado y mouse retroiluminado, 1 año de uso </p>
+                    <h5>$ 50.000</h5>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Contactar al vendedor</small>
+                    <button type="button" class="btn btn-warning">Contactar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                  <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1562113530-57ba467cea38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Silla de madera</h5>
+                      <p class="card-text">Silla de madera rústica, 17 años de uso </p>
+                      <h5>$ 10.000</h5>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Contactar al vendedor</small>
+                      <button type="button" class="btn btn-warning">Contactar</button>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                      <img src="https://pictures.abebooks.com/inventory/14888455130.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">libro, 100 Años de Soledad, Gabriel García Márquez, pasta dura.</h5>
+                        <p class="card-text">Libro 100 Años de Soledad, gabriel García Márquez, 3 años de uso </p>
+                        <h5>$ 45.000</h5>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Contactar al vendedor</small>
+                        <button type="button" class="btn btn-warning">Contactar</button>
+                      </div>
+                    </div>
+                  </div>
+            <div>
+              </div>
+              <div class="navbar navbar-inverse navbar-fixed-bottom">
+                <div class="container">
+                  <p class="navbar-text">@ReusaCol tienda de garage virtual</p>
+                </div>
+              </div> 
+
+</body>
+</html>
