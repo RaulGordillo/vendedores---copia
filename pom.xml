@@ -64,7 +64,7 @@
                 <artifactId>heroku-maven-plugin</artifactId>
                 <version>3.0.4</version>
 				 <configuration>
-                    <appName>damp-beyond-00113</appName>
+                    <appName>glacial-oasis-46422</appName>
                     <includeTarget>false</includeTarget>
                     <includes>
                         <include>${project.build.directory}/${project.build.finalName}.jar</include>
@@ -75,8 +75,6 @@
                     </processTypes>
                 </configuration>
             </plugin>
-
 		</plugins>
 	</build>
-
 </project>
